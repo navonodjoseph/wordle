@@ -1,4 +1,4 @@
-const dictionary = ['river','sorry','salty','slice', 'mount', 'earth', 'style', 'birth', 'audio', 'house'];
+const dictionary = ['focus','river','sorry','salty','slice', 'mount', 'earth', 'style', 'birth', 'audio', 'house'];
 
 
 const state = {
