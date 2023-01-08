@@ -63,7 +63,7 @@ function registerKeyBoardEvents (){
     updateGrid(); 
     }; 
 ```
-
+If you do a quick google search, you'll find plenty of code online for building this game. I spent a lot of time looking at solutions made by other developers and built this function using what we've learned so far in class. I'm including this entire function because I learned a lot about building game logic and how a single function can encompass so much. 
 
 
 ## what's next (improvements) 
