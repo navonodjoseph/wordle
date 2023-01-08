@@ -67,3 +67,7 @@ If you do a quick google search, you'll find plenty of code online for building 
 
 
 ## what's next (improvements) 
+- expanded dictionary (so far I have maybe 20 words). We haven't used APIs in class but I suspect this will help. 
+- better animation. I'm confident I can spend a little more time on the CSS to animate the each box after the guess is registered.
+- This is essentially a grid that registers keystrokes. I could build out the dialogue box before and after the game, much like the NYT version that features a timer and differing messages based on the number of guesses.   
+
