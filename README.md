@@ -26,15 +26,43 @@ Note: For the sake of brevity I'm not including all of the code that created thi
 ## revisiting CSS styling
 One of the hardest mental leaps for me was understanding that I could create a DIV in javascript and apply CSS styling. I was used to being able to view all CSS selectors in the HTML file, so it took me some time to figure out how exaclty to make the CSS work with my new elements created in the DOM. I learned to spend a lot of time orienting myself by using Dev tools and checking for my new elements there. 
 
-## next steps (silver plan)
+## game logic & next steps (silver plan)
 I was happy to get a grid made that closely resembled the original Wordle game. I still didn't have a way to register keystrokes or create the conditions that matched the game. 
 
 For my silver plan, I set out to do the following: 
 - figure out how to register keystrokes
 - prevent players from entering symbols or special charcters in the boxes (boxes are for letters only) 
 - include additional functionality for `backspace` and `enter`
+- create dictionary that would check to see if word is valid 
+- highlight letters in green if correct spot, yellow if contained in word, and dark gray if not part of word.   
 
+The logic is mostly represented in the `registerKeyBoardEvents` function. Because the game is played entirely through the keyboard, I decided to use the `onkeydown` event which allowed me to assign keystrokes to five separate functions including `getCurrentWord`, `isWordValid`, `revealWord`. 
 
+```
+function registerKeyBoardEvents (){
+    document.body.onkeydown = (e) => {
+        const key = e.key; 
+        if (key === 'Enter'){
+            if (state.currentCol === 5){
+            const word = getCurrentWord (); 
+            if (isWordValid(word)){
+                revealWord(word); 
+                state.currentRow++;
+                state.currentCol=0; 
+            }else{
+                alert('not a valid word')
+            }
+        }
+    }
+    if (key === 'Backspace'){
+        removeLetter(); 
+    }
+    if (isLetter(key)){
+        addLetter(key); 
+    }
+    updateGrid(); 
+    }; 
+```
 
 
 
