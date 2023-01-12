@@ -1,6 +1,5 @@
 # wordle
-A version of the popular word game using javascript, html, and css 
-link to website: https://navonodjoseph.github.io/wordle/
+A version of the popular word game using javascript, html, and css. Check out the end result here: https://navonodjoseph.github.io/wordle/
 
 ## background
 This project is part of my immersive software engineering coursework at General Assembly. It allowed me to implement key concepts like DOM, eventListeners, and JavaScript for the first time in a big project and try to stretch my capabilities (it certainly did that). 
